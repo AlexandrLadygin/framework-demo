@@ -1,5 +1,6 @@
 package pages.calculator;
 
+import model.ComputeEngine;
 import pages.AbstractPage;
 import org.openqa.selenium.*;
 import org.openqa.selenium.support.FindBy;
@@ -179,6 +180,24 @@ public class CalculatorHomePage extends AbstractPage {
         xpathSendEmailBtn.click();
         return this;
     }
+
+
+    public CalculatorHomePage useProperties (ComputeEngine engine){
+        this.activateComputeEngine()
+                .pasteNumberOfInstance(engine.getNumberOfInstance())
+                .pasteWhatAreTheseInstancesFor(engine.getWhatAreTheseInstancesFor())
+                .chooseOperatingSystemSoftware(engine.getOperatingSystemSoftware())
+                .chooseMachineClass(engine.getMachineClass())
+                .chooseMachineType(engine.getMachineType())
+                .addGPUs()
+                .chooseNumberOfGPUs(engine.getNumberOfGPUs())
+                .chooseGPUType(engine.getGPUType())
+                .chooseLocalSSD(engine.getLocalSSD())
+                .chooseDataCenterLocation(engine.getDataCenterLocation())
+                .chooseCommittedUsage(engine.getCommittedUsage());
+        return this;
+    }
+
 
     public String getVMClassInfo(){
         return VMClassInfoLine.getText();

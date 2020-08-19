@@ -1,10 +1,12 @@
 package tests;
 
+import model.ComputeEngine;
 import org.testng.Assert;
 import pages.calculator.CalculatorHomePage;
 import pages.calculator.GoogleCloudHomePage;
 import pages.calculator.TempEmailPage;
 import org.testng.annotations.*;
+import service.ComputeEngineCreator;
 
 import java.awt.datatransfer.UnsupportedFlavorException;
 import java.io.IOException;
@@ -13,22 +15,14 @@ public class CalculatorTest extends CommonConditions {
 
     @Test
     public void GoogleCloudCalculatorTestWithSendingEmail () throws IOException, UnsupportedFlavorException {
+
+        ComputeEngine engine = ComputeEngineCreator.withCredentialsProperties();
+
         CalculatorHomePage calculatorPage = new GoogleCloudHomePage(driver)
                 .openPage()
                 .searchResultsForTerms("Google Cloud Platform Pricing Calculator")
                 .clickOnTheFirstTerm()
-                .activateComputeEngine()
-                .pasteNumberOfInstance("4")
-                .pasteWhatAreTheseInstancesFor("")
-                .chooseOperatingSystemSoftware("Free: Debian, CentOS, CoreOS, Ubuntu, or other User Provided OS")
-                .chooseMachineClass("Regular")
-                .chooseMachineType("n1-standard-8 (vCPUs: 8, RAM: 30GB)")
-                .addGPUs()
-                .chooseNumberOfGPUs("1")
-                .chooseGPUType("NVIDIA Tesla V100")
-                .chooseLocalSSD("2x375 GB")
-                .chooseDataCenterLocation("Frankfurt (europe-west3)")
-                .chooseCommittedUsage("1 Year")
+                .useProperties(engine)
                 .clickAddToEstimate()
                 .clickEmailEstimate();
 

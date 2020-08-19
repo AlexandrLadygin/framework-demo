@@ -6,4 +6,3 @@ pages\calculator\GoogleCloudResultsPage.class
 tests\CalculatorTest.class
 pages\AbstractPage.class
 driver\DriverSingleton.class
-tests\ExampleTest.class

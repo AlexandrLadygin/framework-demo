@@ -1,10 +1,10 @@
 package tests;
 
+import org.testng.Assert;
 import pages.calculator.CalculatorHomePage;
 import pages.calculator.GoogleCloudHomePage;
 import pages.calculator.TempEmailPage;
-import org.junit.Assert;
-import org.junit.Test;
+import org.testng.annotations.*;
 
 import java.awt.datatransfer.UnsupportedFlavorException;
 import java.io.IOException;
@@ -43,7 +43,7 @@ public class CalculatorTest extends CommonConditions {
         tempEmailPage.switchTabByIndex(1);
         String totalCostInfo = tempEmailPage.getMessageWithEstimatedCost().getTextFromMessage();
 
-        Assert.assertEquals("Total Cost Is WRONG!", "Estimated Monthly Cost: USD 1,082.77", totalCostInfo);
+        Assert.assertEquals(totalCostInfo, "Estimated Monthly Cost: USD 1,082.77");
     }
 
 }

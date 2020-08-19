@@ -1,11 +1,45 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="0" passed="0">
+<testng-results skipped="0" failed="0" ignored="0" total="2" passed="2">
   <reporter-output>
   </reporter-output>
-  <suite name="Command line suite" duration-ms="6" started-at="2020-08-18T12:58:13 GMT+03:00" finished-at="2020-08-18T12:58:13 GMT+03:00">
+  <suite name="Smoke" duration-ms="45549" started-at="2020-08-19T18:51:09 GMT+03:00" finished-at="2020-08-19T18:51:54 GMT+03:00">
     <groups>
     </groups>
-    <test name="Command line test" duration-ms="6" started-at="2020-08-18T12:58:13 GMT+03:00" finished-at="2020-08-18T12:58:13 GMT+03:00">
-    </test> <!-- Command line test -->
-  </suite> <!-- Command line suite -->
+    <test name="CalculatorTest" duration-ms="45549" started-at="2020-08-19T18:51:09 GMT+03:00" finished-at="2020-08-19T18:51:54 GMT+03:00">
+      <class name="tests.CalculatorTest">
+        <test-method status="PASS" signature="browserSetup()[pri:0, instance:tests.CalculatorTest@6fc6f14e]" name="browserSetup" is-config="true" duration-ms="6461" started-at="2020-08-19T18:51:09 GMT+03:00" finished-at="2020-08-19T18:51:15 GMT+03:00">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- browserSetup -->
+        <test-method status="PASS" signature="GoogleCloudCalculatorTestWithSendingEmail()[pri:0, instance:tests.CalculatorTest@6fc6f14e]" name="GoogleCloudCalculatorTestWithSendingEmail" duration-ms="29455" started-at="2020-08-19T18:51:15 GMT+03:00" finished-at="2020-08-19T18:51:45 GMT+03:00">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- GoogleCloudCalculatorTestWithSendingEmail -->
+        <test-method status="PASS" signature="browserTearDown()[pri:0, instance:tests.CalculatorTest@6fc6f14e]" name="browserTearDown" is-config="true" duration-ms="9631" started-at="2020-08-19T18:51:45 GMT+03:00" finished-at="2020-08-19T18:51:54 GMT+03:00">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- browserTearDown -->
+      </class> <!-- tests.CalculatorTest -->
+    </test> <!-- CalculatorTest -->
+  </suite> <!-- Smoke -->
+  <suite name="All tests" duration-ms="61357" started-at="2020-08-19T18:50:08 GMT+03:00" finished-at="2020-08-19T18:51:09 GMT+03:00">
+    <groups>
+    </groups>
+    <test name="All tests" duration-ms="61357" started-at="2020-08-19T18:50:08 GMT+03:00" finished-at="2020-08-19T18:51:09 GMT+03:00">
+      <class name="tests.CalculatorTest">
+        <test-method status="PASS" signature="browserSetup()[pri:0, instance:tests.CalculatorTest@5649fd9b]" name="browserSetup" is-config="true" duration-ms="17681" started-at="2020-08-19T18:50:08 GMT+03:00" finished-at="2020-08-19T18:50:25 GMT+03:00">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- browserSetup -->
+        <test-method status="PASS" signature="GoogleCloudCalculatorTestWithSendingEmail()[pri:0, instance:tests.CalculatorTest@5649fd9b]" name="GoogleCloudCalculatorTestWithSendingEmail" duration-ms="36156" started-at="2020-08-19T18:50:25 GMT+03:00" finished-at="2020-08-19T18:51:01 GMT+03:00">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- GoogleCloudCalculatorTestWithSendingEmail -->
+        <test-method status="PASS" signature="browserTearDown()[pri:0, instance:tests.CalculatorTest@5649fd9b]" name="browserTearDown" is-config="true" duration-ms="7493" started-at="2020-08-19T18:51:01 GMT+03:00" finished-at="2020-08-19T18:51:09 GMT+03:00">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- browserTearDown -->
+      </class> <!-- tests.CalculatorTest -->
+    </test> <!-- All tests -->
+  </suite> <!-- All tests -->
 </testng-results>

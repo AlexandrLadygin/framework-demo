@@ -1,10 +1,11 @@
 tests\CommonConditions.class
 pages\calculator\TempEmailPage.class
 pages\calculator\CalculatorHomePage.class
-pages\calculator\GoogleCloudHomePage.class
 service\ComputeEngineCreator.class
-model\ComputeEngine.class
 pages\calculator\GoogleCloudResultsPage.class
 tests\CalculatorTest.class
+pages\calculator\GoogleCloudHomePage.class
+model\ComputeEngine.class
+service\TestDataReader.class
 pages\AbstractPage.class
 driver\DriverSingleton.class

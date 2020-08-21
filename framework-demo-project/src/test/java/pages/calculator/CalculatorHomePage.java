@@ -7,12 +7,17 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
+
+
 public class CalculatorHomePage extends AbstractPage {
 
     protected CalculatorHomePage(WebDriver driver) {
         super(driver);
     }
 
+    private final Logger logger = LogManager.getRootLogger();
     private WebDriverWait wait =  new WebDriverWait(driver, WAIT_TIMEOUT_SECONDS);
     private JavascriptExecutor executor = (JavascriptExecutor)driver;
     private String universalTextForDropDownXpath = "//*[@class='md-select-menu-container md-active md-clickable']//*[contains(text(), '%s')]";
@@ -71,6 +76,7 @@ public class CalculatorHomePage extends AbstractPage {
         driver.switchTo().frame("myFrame");
         wait.until(ExpectedConditions.elementToBeClickable(xpathComputeEngine));
         xpathComputeEngine.click();
+        logger.info("Activated Compute Engine");
         return this;
     }
 
@@ -78,6 +84,7 @@ public class CalculatorHomePage extends AbstractPage {
         wait.until(ExpectedConditions.elementToBeClickable(xpathNumberOfInstanceField));
         xpathNumberOfInstanceField.click();
         xpathNumberOfInstanceField.sendKeys(number);
+        logger.info("Pasted Number Of Instance: [" + number + "]" );
         return this;
     }
 
@@ -85,6 +92,7 @@ public class CalculatorHomePage extends AbstractPage {
         wait.until(ExpectedConditions.elementToBeClickable(xpathWhatAreTheseInstancesForField));
         xpathWhatAreTheseInstancesForField.click();
         xpathWhatAreTheseInstancesForField.sendKeys(reason);
+        logger.info("Pasted What Are These Instances For: [" + reason + "]" );
         return this;
     }
 
@@ -92,6 +100,7 @@ public class CalculatorHomePage extends AbstractPage {
         wait.until(ExpectedConditions.elementToBeClickable(xpathOperatingSystemSoftwareField));
         xpathOperatingSystemSoftwareField.click();
         this.selectElementAndClick(choice);
+        logger.info("Chose Operating System Software: [" + choice + "]" );
         return this;
     }
 
@@ -99,6 +108,7 @@ public class CalculatorHomePage extends AbstractPage {
         wait.until(ExpectedConditions.elementToBeClickable(xpathMachineClassField));
         xpathMachineClassField.click();
         this.selectElementAndClick(choice);
+        logger.info("Chose Machine Class: [" + choice + "]" );
         return this;
     }
 
@@ -106,6 +116,7 @@ public class CalculatorHomePage extends AbstractPage {
         wait.until(ExpectedConditions.elementToBeClickable(xpathMachineTypeField));
         xpathMachineTypeField.click();
         this.selectElementAndClick(choice);
+        logger.info("Chose Machine Type: [" + choice + "]" );
         return this;
     }
 
@@ -114,6 +125,7 @@ public class CalculatorHomePage extends AbstractPage {
         xpathAddGPUs.click();
         wait.until(ExpectedConditions.visibilityOfElementLocated(By
                 .xpath("//md-checkbox[@aria-label='Add GPUs' and @aria-checked='true']")));
+        logger.info("Added GPUs");
         return this;
     }
 
@@ -122,6 +134,7 @@ public class CalculatorHomePage extends AbstractPage {
         wait.until(ExpectedConditions.elementToBeClickable(xpathNumberOfGPUsField));
         xpathNumberOfGPUsField.click();
         this.selectElementAndClick(choice);
+        logger.info("Chose Number Of GPUs: [" + choice + "]" );
         return this;
     }
 
@@ -129,6 +142,7 @@ public class CalculatorHomePage extends AbstractPage {
         wait.until(ExpectedConditions.elementToBeClickable(xpathGPUTypeField));
         xpathGPUTypeField.click();
         this.selectElementAndClick(choice);
+        logger.info("Chose GPU Type: [" + choice + "]" );
         return this;
     }
 
@@ -136,6 +150,7 @@ public class CalculatorHomePage extends AbstractPage {
         wait.until(ExpectedConditions.elementToBeClickable(xpathLocalSSDField));
         xpathLocalSSDField.click();
         this.selectElementAndClick(choice);
+        logger.info("Chose Local SSD: [" + choice + "]" );
         return this;
     }
 
@@ -143,6 +158,7 @@ public class CalculatorHomePage extends AbstractPage {
         wait.until(ExpectedConditions.elementToBeClickable(xpathDataCenterLocationField));
         xpathDataCenterLocationField.click();
         this.selectElementAndClick(choice);
+        logger.info("Chose Data Center Location: [" + choice + "]" );
         return this;
     }
 
@@ -150,6 +166,7 @@ public class CalculatorHomePage extends AbstractPage {
         wait.until(ExpectedConditions.elementToBeClickable(xpathCommittedUsageField));
         xpathCommittedUsageField.click();
         this.selectElementAndClick(choice);
+        logger.info("Chose Committed Usage: [" + choice + "]" );
         return this;
     }
 
@@ -157,6 +174,7 @@ public class CalculatorHomePage extends AbstractPage {
         wait.until(ExpectedConditions.elementToBeClickable(xpathAddToEstimateBtn));
         xpathAddToEstimateBtn.click();
         executor.executeScript("arguments[0].scrollIntoView();", xpathNumberOfInstanceField);
+        logger.info("Clicked Add To Estimate");
         return this;
     }
     
@@ -165,6 +183,7 @@ public class CalculatorHomePage extends AbstractPage {
         xpathEmailEstimateBtn.click();
         executor.executeScript("arguments[0].scrollIntoView();", xpathEmailForm);
         wait.until(ExpectedConditions.visibilityOf(xpathEmailForm));
+        logger.info("Clicked Email Estimate");
         return this;
     }
 
@@ -172,12 +191,14 @@ public class CalculatorHomePage extends AbstractPage {
         executor.executeScript("arguments[0].scrollIntoView();", xpathEmailForm);
         xpathEmailField.click();
         xpathEmailField.sendKeys(tempEmailAddressText);
+        logger.info("Pasted Email Address: [" + tempEmailAddressText + "]" );
         return this;
     }
 
     public CalculatorHomePage clickSendEmail(){
         wait.until(ExpectedConditions.elementToBeClickable(xpathSendEmailBtn));
         xpathSendEmailBtn.click();
+        logger.info("Clicked Send Email");
         return this;
     }
 

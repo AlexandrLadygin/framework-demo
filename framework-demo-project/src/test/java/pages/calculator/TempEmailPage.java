@@ -1,10 +1,13 @@
 package pages.calculator;
 
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 import pages.AbstractPage;
 import org.openqa.selenium.*;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
+
 
 public class TempEmailPage extends AbstractPage {
 
@@ -12,6 +15,7 @@ public class TempEmailPage extends AbstractPage {
         super(driver);
     }
     private static final String HOMEPAGE_URL = "https://dropmail.me/ru/";
+    private final Logger logger = LogManager.getRootLogger();
 
     @FindBy(xpath = "//span[@class='email']")
     private WebElement xpathMailAddressField;
@@ -32,6 +36,7 @@ public class TempEmailPage extends AbstractPage {
     public String copyTempEmailAddress() {
         new WebDriverWait(driver,20000).until(ExpectedConditions.elementToBeClickable(xpathMailAddressField));
         String textEmail = xpathMailAddressField.getText();
+        logger.info("Copied Temp Email Address: [" + textEmail + "]" );
         return textEmail;
     }
 
@@ -41,11 +46,14 @@ public class TempEmailPage extends AbstractPage {
         JavascriptExecutor executor = (JavascriptExecutor) driver;
         executor.executeScript("arguments[0].scrollIntoView();", xpathHTMLFormButton);
         xpathHTMLFormButton.click();
+        logger.info("Get Message With Estimated Cost" );
         return  this;
     }
 
     public String getTextFromMessage(){
         driver.switchTo().frame(0);
-        return xpathCostField.getText();
+        String txtFromMess = xpathCostField.getText();
+        logger.info("Text From Message: [" + txtFromMess + "]" );
+        return txtFromMess;
     }
 }

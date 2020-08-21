@@ -1,0 +1,19 @@
+[INFO ] 2020-08-21 18:36:18.129 [main]  - Activated Compute Engine
+[INFO ] 2020-08-21 18:36:18.474 [main]  - Pasted Number Of Instance: [4]
+[INFO ] 2020-08-21 18:36:18.789 [main]  - Pasted What Are These Instances For: []
+[INFO ] 2020-08-21 18:36:19.389 [main]  - Сhose Operating System Software: [Free: Debian, CentOS, CoreOS, Ubuntu, or other User Provided OS]
+[INFO ] 2020-08-21 18:36:19.974 [main]  - Сhose Machine Class: [Regular]
+[INFO ] 2020-08-21 18:36:20.580 [main]  - Сhose Machine Type: [n1-standard-8 (vCPUs: 8, RAM: 30GB)]
+[INFO ] 2020-08-21 18:36:20.941 [main]  - Added GPUs
+[INFO ] 2020-08-21 18:36:21.541 [main]  - Сhose Number Of GPUs: [1]
+[INFO ] 2020-08-21 18:36:22.142 [main]  - Сhose GPU Type: [NVIDIA Tesla V100]
+[INFO ] 2020-08-21 18:36:22.715 [main]  - Сhose Local SSD: [2x375 GB]
+[INFO ] 2020-08-21 18:36:23.312 [main]  - Сhose Data Center Location: [Frankfurt (europe-west3)]
+[INFO ] 2020-08-21 18:36:23.889 [main]  - Сhose Committed Usage: [1 Year]
+[INFO ] 2020-08-21 18:36:24.368 [main]  - Clicked Add To Estimate
+[INFO ] 2020-08-21 18:36:24.905 [main]  - Clicked Email Estimate
+[INFO ] 2020-08-21 18:36:28.384 [main]  - Copied Temp Email Address: [qgvudfzh@laste.ml]
+[INFO ] 2020-08-21 18:36:28.850 [main]  - Paste Email Address: [qgvudfzh@laste.ml]
+[INFO ] 2020-08-21 18:36:29.131 [main]  - Clicked Send Email
+[INFO ] 2020-08-21 18:36:31.876 [main]  - Get Message With Estimated Cost
+[INFO ] 2020-08-21 18:36:31.895 [main]  - Text From Message: [Estimated Monthly Cost: USD 1,082.77]

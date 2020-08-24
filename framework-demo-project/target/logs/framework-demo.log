@@ -1,9 +1,0 @@
-[INFO ] 2020-08-21 19:05:24.966 [main]  - Activated Compute Engine
-[INFO ] 2020-08-21 19:05:25.309 [main]  - Pasted Number Of Instance: [4]
-[INFO ] 2020-08-21 19:05:25.625 [main]  - Pasted What Are These Instances For: []
-[INFO ] 2020-08-21 19:05:26.226 [main]  - Chose Operating System Software: [Free: Debian, CentOS, CoreOS, Ubuntu, or other User Provided OS]
-[INFO ] 2020-08-21 19:05:26.749 [main]  - Chose Machine Class: [Regular]
-[INFO ] 2020-08-21 19:05:27.389 [main]  - Chose Machine Type: [n1-standard-8 (vCPUs: 8, RAM: 30GB)]
-[INFO ] 2020-08-21 19:05:27.750 [main]  - Added GPUs
-[INFO ] 2020-08-21 19:05:28.329 [main]  - Chose Number Of GPUs: [1]
-[INFO ] 2020-08-21 19:05:28.917 [main]  - Chose GPU Type: [NVIDIA Tesla V100]

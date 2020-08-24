@@ -14,10 +14,11 @@ public class ComputeEngine {
     private String localSSD;
     private String dataCenterLocation;
     private String committedUsage;
+    private String expectedEstimate;
 
     public ComputeEngine(String numberOfInstance, String whatAreTheseInstancesFor, String operatingSystemSoftware,
                          String machineClass, String machineType, String numberOfGPUs, String GPUType, String localSSD,
-                         String dataCenterLocation, String committedUsage) {
+                         String dataCenterLocation, String committedUsage, String expectedEstimate) {
         this.numberOfInstance = numberOfInstance;
         this.whatAreTheseInstancesFor = whatAreTheseInstancesFor;
         this.operatingSystemSoftware = operatingSystemSoftware;
@@ -28,6 +29,7 @@ public class ComputeEngine {
         this.localSSD = localSSD;
         this.dataCenterLocation = dataCenterLocation;
         this.committedUsage = committedUsage;
+        this.expectedEstimate = expectedEstimate;
     }
 
 
@@ -111,6 +113,13 @@ public class ComputeEngine {
         this.committedUsage = committedUsage;
     }
 
+    public String getExpectedEstimate() {
+        return expectedEstimate;
+    }
+
+    public void setExpectedEstimate(String expectedEstimate) {
+        this.expectedEstimate = expectedEstimate;
+    }
 
     @Override
     public String toString() {
@@ -125,6 +134,7 @@ public class ComputeEngine {
                 ", localSSD='" + localSSD + '\'' +
                 ", dataCenterLocation='" + dataCenterLocation + '\'' +
                 ", committedUsage='" + committedUsage + '\'' +
+                ", expectedEstimate='" + expectedEstimate + '\'' +
                 '}';
     }
 
@@ -132,22 +142,32 @@ public class ComputeEngine {
     public boolean equals(Object o) {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
-        ComputeEngine that = (ComputeEngine) o;
-        return Objects.equals(numberOfInstance, that.numberOfInstance) &&
-                Objects.equals(whatAreTheseInstancesFor, that.whatAreTheseInstancesFor) &&
-                Objects.equals(operatingSystemSoftware, that.operatingSystemSoftware) &&
-                Objects.equals(machineClass, that.machineClass) &&
-                Objects.equals(machineType, that.machineType) &&
-                Objects.equals(numberOfGPUs, that.numberOfGPUs) &&
-                Objects.equals(GPUType, that.GPUType) &&
-                Objects.equals(localSSD, that.localSSD) &&
-                Objects.equals(dataCenterLocation, that.dataCenterLocation) &&
-                Objects.equals(committedUsage, that.committedUsage);
+        ComputeEngine engine = (ComputeEngine) o;
+        return Objects.equals(numberOfInstance, engine.numberOfInstance) &&
+                Objects.equals(whatAreTheseInstancesFor, engine.whatAreTheseInstancesFor) &&
+                Objects.equals(operatingSystemSoftware, engine.operatingSystemSoftware) &&
+                Objects.equals(machineClass, engine.machineClass) &&
+                Objects.equals(machineType, engine.machineType) &&
+                Objects.equals(numberOfGPUs, engine.numberOfGPUs) &&
+                Objects.equals(GPUType, engine.GPUType) &&
+                Objects.equals(localSSD, engine.localSSD) &&
+                Objects.equals(dataCenterLocation, engine.dataCenterLocation) &&
+                Objects.equals(committedUsage, engine.committedUsage) &&
+                Objects.equals(expectedEstimate, engine.expectedEstimate);
     }
 
     @Override
     public int hashCode() {
-        return Objects.hash(numberOfInstance, whatAreTheseInstancesFor, operatingSystemSoftware,
-                machineClass, machineType, numberOfGPUs, GPUType, localSSD, dataCenterLocation, committedUsage);
+        return Objects.hash(numberOfInstance,
+                whatAreTheseInstancesFor,
+                operatingSystemSoftware,
+                machineClass,
+                machineType,
+                numberOfGPUs,
+                GPUType,
+                localSSD,
+                dataCenterLocation,
+                committedUsage,
+                expectedEstimate);
     }
 }

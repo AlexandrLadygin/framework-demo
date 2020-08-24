@@ -37,7 +37,7 @@ public class CalculatorTest extends CommonConditions {
         tempEmailPage.switchTabByIndex(1);
         String totalCostInfo = tempEmailPage.getMessageWithEstimatedCost().getTextFromMessage();
 
-        Assert.assertEquals(totalCostInfo, "Estimated Monthly Cost: USD 1,082.77");
+        Assert.assertEquals(totalCostInfo, engine.getExpectedEstimate());
     }
 
 }

@@ -52,8 +52,16 @@ public class TempEmailPage extends AbstractPage {
 
     public String getTextFromMessage(){
         driver.switchTo().frame(0);
+        String resultingValue = null;
         String txtFromMess = xpathCostField.getText();
+        String [] arr = txtFromMess.split(" ");
+        for (int i = 0; i < arr.length; i++) {
+            if (arr[i].contains(",")) {
+                 resultingValue = arr[i];
+            }
+        }
         logger.info("Text From Message: [" + txtFromMess + "]" );
-        return txtFromMess;
+        logger.info("Resulting Value: [" + resultingValue + "]" );
+        return resultingValue;
     }
 }

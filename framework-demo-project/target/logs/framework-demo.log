@@ -1,20 +1,20 @@
-[INFO ] 2020-08-26 19:10:39.949 [main]  - Activated Compute Engine
-[INFO ] 2020-08-26 19:10:40.266 [main]  - Pasted Number Of Instance: [4]
-[INFO ] 2020-08-26 19:10:40.566 [main]  - Pasted What Are These Instances For: []
-[INFO ] 2020-08-26 19:10:41.126 [main]  - Chose Operating System Software: [Free: Debian, CentOS, CoreOS, Ubuntu, or other User Provided OS]
-[INFO ] 2020-08-26 19:10:41.715 [main]  - Chose Machine Class: [Regular]
-[INFO ] 2020-08-26 19:10:47.560 [main]  - Chose Machine Type: [n1-standard-8 (vCPUs: 8, RAM: 30GB)]
-[INFO ] 2020-08-26 19:10:47.949 [main]  - Added GPUs
-[INFO ] 2020-08-26 19:10:48.518 [main]  - Chose Number Of GPUs: [1]
-[INFO ] 2020-08-26 19:10:49.137 [main]  - Chose GPU Type: [NVIDIA Tesla V100]
-[INFO ] 2020-08-26 19:10:49.721 [main]  - Chose Local SSD: [2x375 GB]
-[INFO ] 2020-08-26 19:10:50.308 [main]  - Chose Data Center Location: [Frankfurt (europe-west3)]
-[INFO ] 2020-08-26 19:10:50.870 [main]  - Chose Committed Usage: [1 Year]
-[INFO ] 2020-08-26 19:10:51.423 [main]  - Clicked Add To Estimate
-[INFO ] 2020-08-26 19:10:51.947 [main]  - Clicked Email Estimate
-[INFO ] 2020-08-26 19:10:54.870 [main]  - Copied Temp Email Address: [ydgoasyg@10mail.org]
-[INFO ] 2020-08-26 19:10:55.290 [main]  - Pasted Email Address: [ydgoasyg@10mail.org]
-[INFO ] 2020-08-26 19:10:55.566 [main]  - Clicked Send Email
-[INFO ] 2020-08-26 19:10:57.393 [main]  - Get Message With Estimated Cost
-[INFO ] 2020-08-26 19:10:57.418 [main]  - Text From Message: [Estimated Monthly Cost: USD 1,082.77]
-[INFO ] 2020-08-26 19:10:57.418 [main]  - Resulting Value: [1,082.77]
+[INFO ] 2020-08-26 19:33:22.078 [main]  - Activated Compute Engine
+[INFO ] 2020-08-26 19:33:22.485 [main]  - Pasted Number Of Instance: [4]
+[INFO ] 2020-08-26 19:33:22.818 [main]  - Pasted What Are These Instances For: []
+[INFO ] 2020-08-26 19:33:23.375 [main]  - Chose Operating System Software: [Free: Debian, CentOS, CoreOS, Ubuntu, or other User Provided OS]
+[INFO ] 2020-08-26 19:33:23.951 [main]  - Chose Machine Class: [Regular]
+[INFO ] 2020-08-26 19:33:24.524 [main]  - Chose Machine Type: [n1-standard-8 (vCPUs: 8, RAM: 30GB)]
+[INFO ] 2020-08-26 19:33:24.900 [main]  - Added GPUs
+[INFO ] 2020-08-26 19:33:25.526 [main]  - Chose Number Of GPUs: [1]
+[INFO ] 2020-08-26 19:33:26.188 [main]  - Chose GPU Type: [NVIDIA Tesla V100]
+[INFO ] 2020-08-26 19:33:26.794 [main]  - Chose Local SSD: [2x375 GB]
+[INFO ] 2020-08-26 19:33:27.383 [main]  - Chose Data Center Location: [Frankfurt (europe-west3)]
+[INFO ] 2020-08-26 19:33:27.980 [main]  - Chose Committed Usage: [1 Year]
+[INFO ] 2020-08-26 19:33:28.427 [main]  - Clicked Add To Estimate
+[INFO ] 2020-08-26 19:33:29.022 [main]  - Clicked Email Estimate
+[INFO ] 2020-08-26 19:33:31.606 [main]  - Copied Temp Email Address: [lsgxkxbi@firste.ml]
+[INFO ] 2020-08-26 19:33:32.091 [main]  - Pasted Email Address: [lsgxkxbi@firste.ml]
+[INFO ] 2020-08-26 19:33:32.379 [main]  - Clicked Send Email
+[INFO ] 2020-08-26 19:33:34.292 [main]  - Get Message With Estimated Cost
+[INFO ] 2020-08-26 19:33:34.312 [main]  - Text From Message: [Estimated Monthly Cost: USD 1,082.77]
+[INFO ] 2020-08-26 19:33:34.312 [main]  - Resulting Value: [1,082.77]

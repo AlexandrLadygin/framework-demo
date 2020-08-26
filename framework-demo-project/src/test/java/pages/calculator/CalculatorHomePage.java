@@ -114,6 +114,7 @@ public class CalculatorHomePage extends AbstractPage {
     }
 
     public CalculatorHomePage chooseMachineType(String choice) {
+        executor.executeScript("arguments[0].scrollIntoView();", xpathMachineTypeField);
         wait.until(ExpectedConditions.elementToBeClickable(xpathMachineTypeField));
         xpathMachineTypeField.click();
         this.selectElementAndClick(choice);
@@ -247,11 +248,6 @@ public class CalculatorHomePage extends AbstractPage {
 
     private void selectElementAndClick (String selectedOption) {
         String fullXpathForElement = String.format(universalTextForDropDownXpath, selectedOption);
-
-        Actions actions = new Actions(driver);
-        actions.moveToElement(driver.findElement(By.xpath(fullXpathForElement)));
-        actions.perform();
-
         wait.until(ExpectedConditions.elementToBeClickable(driver.findElement(By.xpath(fullXpathForElement))));
         driver.findElement(By.xpath(fullXpathForElement)).click();
     }

@@ -1,20 +1,24 @@
-[INFO ] 2020-08-26 19:33:22.078 [main]  - Activated Compute Engine
-[INFO ] 2020-08-26 19:33:22.485 [main]  - Pasted Number Of Instance: [4]
-[INFO ] 2020-08-26 19:33:22.818 [main]  - Pasted What Are These Instances For: []
-[INFO ] 2020-08-26 19:33:23.375 [main]  - Chose Operating System Software: [Free: Debian, CentOS, CoreOS, Ubuntu, or other User Provided OS]
-[INFO ] 2020-08-26 19:33:23.951 [main]  - Chose Machine Class: [Regular]
-[INFO ] 2020-08-26 19:33:24.524 [main]  - Chose Machine Type: [n1-standard-8 (vCPUs: 8, RAM: 30GB)]
-[INFO ] 2020-08-26 19:33:24.900 [main]  - Added GPUs
-[INFO ] 2020-08-26 19:33:25.526 [main]  - Chose Number Of GPUs: [1]
-[INFO ] 2020-08-26 19:33:26.188 [main]  - Chose GPU Type: [NVIDIA Tesla V100]
-[INFO ] 2020-08-26 19:33:26.794 [main]  - Chose Local SSD: [2x375 GB]
-[INFO ] 2020-08-26 19:33:27.383 [main]  - Chose Data Center Location: [Frankfurt (europe-west3)]
-[INFO ] 2020-08-26 19:33:27.980 [main]  - Chose Committed Usage: [1 Year]
-[INFO ] 2020-08-26 19:33:28.427 [main]  - Clicked Add To Estimate
-[INFO ] 2020-08-26 19:33:29.022 [main]  - Clicked Email Estimate
-[INFO ] 2020-08-26 19:33:31.606 [main]  - Copied Temp Email Address: [lsgxkxbi@firste.ml]
-[INFO ] 2020-08-26 19:33:32.091 [main]  - Pasted Email Address: [lsgxkxbi@firste.ml]
-[INFO ] 2020-08-26 19:33:32.379 [main]  - Clicked Send Email
-[INFO ] 2020-08-26 19:33:34.292 [main]  - Get Message With Estimated Cost
-[INFO ] 2020-08-26 19:33:34.312 [main]  - Text From Message: [Estimated Monthly Cost: USD 1,082.77]
-[INFO ] 2020-08-26 19:33:34.312 [main]  - Resulting Value: [1,082.77]
+[INFO ] 2020-08-26 20:26:18.904 [main]  - Opened Google Cloud HomePage
+[INFO ] 2020-08-26 20:26:19.366 [main]  - Started to search: [Google Cloud Platform Pricing Calculator]
+[INFO ] 2020-08-26 20:26:29.073 [main]  - Clicked on the first term
+[INFO ] 2020-08-26 20:26:29.567 [main]  - Activated Compute Engine
+[INFO ] 2020-08-26 20:26:29.882 [main]  - Pasted Number Of Instance: [4]
+[INFO ] 2020-08-26 20:26:30.189 [main]  - Pasted What Are These Instances For: []
+[INFO ] 2020-08-26 20:26:30.780 [main]  - Chose Operating System Software: [Free: Debian, CentOS, CoreOS, Ubuntu, or other User Provided OS]
+[INFO ] 2020-08-26 20:26:31.349 [main]  - Chose Machine Class: [Regular]
+[INFO ] 2020-08-26 20:26:31.947 [main]  - Chose Machine Type: [n1-standard-8 (vCPUs: 8, RAM: 30GB)]
+[INFO ] 2020-08-26 20:26:32.288 [main]  - Added GPUs
+[INFO ] 2020-08-26 20:26:32.851 [main]  - Chose Number Of GPUs: [1]
+[INFO ] 2020-08-26 20:26:33.466 [main]  - Chose GPU Type: [NVIDIA Tesla V100]
+[INFO ] 2020-08-26 20:26:34.022 [main]  - Chose Local SSD: [2x375 GB]
+[INFO ] 2020-08-26 20:26:34.635 [main]  - Chose Data Center Location: [Frankfurt (europe-west3)]
+[INFO ] 2020-08-26 20:26:35.258 [main]  - Chose Committed Usage: [1 Year]
+[INFO ] 2020-08-26 20:26:35.685 [main]  - Clicked Add To Estimate
+[INFO ] 2020-08-26 20:26:36.126 [main]  - Clicked Email Estimate
+[INFO ] 2020-08-26 20:26:38.213 [main]  - Opened Temp Email Page
+[INFO ] 2020-08-26 20:26:38.285 [main]  - Copied Temp Email Address: [tetqsdeq@supere.ml]
+[INFO ] 2020-08-26 20:26:38.739 [main]  - Pasted Email Address: [tetqsdeq@supere.ml]
+[INFO ] 2020-08-26 20:26:39.042 [main]  - Clicked Send Email
+[INFO ] 2020-08-26 20:26:42.411 [main]  - Get Message With Estimated Cost
+[INFO ] 2020-08-26 20:26:42.448 [main]  - Text From Message: [Estimated Monthly Cost: USD 1,082.77]
+[INFO ] 2020-08-26 20:26:42.448 [main]  - Resulting Value: [1,082.77]

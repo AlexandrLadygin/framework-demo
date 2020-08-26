@@ -8,9 +8,14 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
+
 import java.util.List;
 
 public class GoogleCloudResultsPage extends AbstractPage {
+
+    private final Logger logger = LogManager.getRootLogger();
 
     protected GoogleCloudResultsPage(WebDriver driver) {
         super(driver);
@@ -24,6 +29,7 @@ public class GoogleCloudResultsPage extends AbstractPage {
                .until(ExpectedConditions.visibilityOf(resultElementOfSearching));
         List<WebElement> searchResultList = driver.findElements(By.xpath("//a[@class='gs-title']"));
         searchResultList.get(0).click();
+        logger.info("Clicked on the first term" );
         return new CalculatorHomePage(driver);
     }
 

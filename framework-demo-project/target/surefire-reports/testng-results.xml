@@ -2,20 +2,20 @@
 <testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Smoke" duration-ms="45056" started-at="2020-08-26T19:32:56 GMT+03:00" finished-at="2020-08-26T19:33:41 GMT+03:00">
+  <suite name="Smoke" duration-ms="42066" started-at="2020-08-26T20:26:07 GMT+03:00" finished-at="2020-08-26T20:26:49 GMT+03:00">
     <groups>
     </groups>
-    <test name="CalculatorTest" duration-ms="45056" started-at="2020-08-26T19:32:56 GMT+03:00" finished-at="2020-08-26T19:33:41 GMT+03:00">
+    <test name="CalculatorTest" duration-ms="42066" started-at="2020-08-26T20:26:07 GMT+03:00" finished-at="2020-08-26T20:26:49 GMT+03:00">
       <class name="tests.CalculatorTest">
-        <test-method status="PASS" signature="browserSetup()[pri:0, instance:tests.CalculatorTest@ff5b51f]" name="browserSetup" is-config="true" duration-ms="6666" started-at="2020-08-26T19:32:56 GMT+03:00" finished-at="2020-08-26T19:33:03 GMT+03:00">
+        <test-method status="PASS" signature="browserSetup()[pri:0, instance:tests.CalculatorTest@ff5b51f]" name="browserSetup" is-config="true" duration-ms="7259" started-at="2020-08-26T20:26:07 GMT+03:00" finished-at="2020-08-26T20:26:14 GMT+03:00">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- browserSetup -->
-        <test-method status="PASS" signature="GoogleCloudCalculatorTestWithSendingEmail()[pri:0, instance:tests.CalculatorTest@ff5b51f]" name="GoogleCloudCalculatorTestWithSendingEmail" duration-ms="30775" started-at="2020-08-26T19:33:03 GMT+03:00" finished-at="2020-08-26T19:33:34 GMT+03:00">
+        <test-method status="PASS" signature="GoogleCloudCalculatorTestWithSendingEmail()[pri:0, instance:tests.CalculatorTest@ff5b51f]" name="GoogleCloudCalculatorTestWithSendingEmail" duration-ms="27565" started-at="2020-08-26T20:26:14 GMT+03:00" finished-at="2020-08-26T20:26:42 GMT+03:00">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- GoogleCloudCalculatorTestWithSendingEmail -->
-        <test-method status="PASS" signature="browserTearDown()[pri:0, instance:tests.CalculatorTest@ff5b51f]" name="browserTearDown" is-config="true" duration-ms="7587" started-at="2020-08-26T19:33:34 GMT+03:00" finished-at="2020-08-26T19:33:41 GMT+03:00">
+        <test-method status="PASS" signature="browserTearDown()[pri:0, instance:tests.CalculatorTest@ff5b51f]" name="browserTearDown" is-config="true" duration-ms="7218" started-at="2020-08-26T20:26:42 GMT+03:00" finished-at="2020-08-26T20:26:49 GMT+03:00">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- browserTearDown -->

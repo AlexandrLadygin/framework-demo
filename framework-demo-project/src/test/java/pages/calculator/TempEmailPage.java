@@ -30,6 +30,7 @@ public class TempEmailPage extends AbstractPage {
     public TempEmailPage openPage() {
         driver.get(HOMEPAGE_URL);
         new WebDriverWait(driver,WAIT_TIMEOUT_SECONDS).until(ExpectedConditions.visibilityOf(xpathMailAddressField));
+        logger.info("Opened Temp Email Page");
         return this;
     }
 

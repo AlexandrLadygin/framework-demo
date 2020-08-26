@@ -13,6 +13,8 @@ import java.io.IOException;
 
 public class CalculatorTest extends CommonConditions {
 
+    public static final String TEXT_FOR_SEARCHING = "Google Cloud Platform Pricing Calculator";
+
     @Test
     public void GoogleCloudCalculatorTestWithSendingEmail () throws IOException, UnsupportedFlavorException {
 
@@ -20,7 +22,7 @@ public class CalculatorTest extends CommonConditions {
 
         CalculatorHomePage calculatorPage = new GoogleCloudHomePage(driver)
                 .openPage()
-                .searchResultsForTerms("Google Cloud Platform Pricing Calculator")
+                .searchResultsForTerms(TEXT_FOR_SEARCHING)
                 .clickOnTheFirstTerm()
                 .useProperties(engine)
                 .clickAddToEstimate()

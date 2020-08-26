@@ -1,7 +1,6 @@
 package pages.calculator;
 
 import model.ComputeEngine;
-import org.openqa.selenium.interactions.Actions;
 import pages.AbstractPage;
 import org.openqa.selenium.*;
 import org.openqa.selenium.support.FindBy;
@@ -114,8 +113,6 @@ public class CalculatorHomePage extends AbstractPage {
     }
 
     public CalculatorHomePage chooseMachineType(String choice) {
-        executor.executeScript("window.scrollBy(0,250)");
-        //executor.executeScript("arguments[0].scrollIntoView();", xpathMachineTypeField);
         wait.until(ExpectedConditions.elementToBeClickable(xpathMachineTypeField));
         xpathMachineTypeField.click();
         this.selectElementAndClick(choice);

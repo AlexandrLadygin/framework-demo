@@ -1,6 +1,7 @@
 package pages.calculator;
 
 import model.ComputeEngine;
+import org.openqa.selenium.interactions.Actions;
 import pages.AbstractPage;
 import org.openqa.selenium.*;
 import org.openqa.selenium.support.FindBy;
@@ -114,7 +115,13 @@ public class CalculatorHomePage extends AbstractPage {
 
     public CalculatorHomePage chooseMachineType(String choice) {
         wait.until(ExpectedConditions.elementToBeClickable(xpathMachineTypeField));
+
+        Actions actions = new Actions(driver);
+        actions.moveToElement(xpathMachineTypeField);
+        actions.perform();
+
         xpathMachineTypeField.click();
+
         this.selectElementAndClick(choice);
         logger.info("Chose Machine Type: [" + choice + "]" );
         return this;

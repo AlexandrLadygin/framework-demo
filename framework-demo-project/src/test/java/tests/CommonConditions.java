@@ -15,6 +15,7 @@ public abstract class CommonConditions {
     @BeforeMethod
     public void browserSetup() {
         driver = DriverSingleton.getDriver();
+        driver.manage().window().maximize();
 
     }
 

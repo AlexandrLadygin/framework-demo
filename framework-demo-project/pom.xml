@@ -22,11 +22,6 @@
                 <artifactId>maven-surefire-plugin</artifactId>
                 <version>2.22.2</version>
                 <configuration>
-                    <!-- TestNG Suite XML files list for test execution -->
-                    <suiteXmlFiles>
-                        <suiteXmlFile>src/test/resources/testng-all.xml</suiteXmlFile>
-                        <suiteXmlFile>src/test/resources/testng-smoke.xml</suiteXmlFile>
-                    </suiteXmlFiles>
                 </configuration>
             </plugin>
         </plugins>

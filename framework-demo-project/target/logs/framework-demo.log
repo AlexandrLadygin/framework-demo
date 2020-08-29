@@ -1,24 +1,17 @@
-[INFO ] 2020-08-28 17:09:59.959 [main]  - Opened Google Cloud HomePage
-[INFO ] 2020-08-28 17:10:00.877 [main]  - Started to search: [Google Cloud Platform Pricing Calculator]
-[INFO ] 2020-08-28 17:10:14.327 [main]  - Clicked on the first term
-[INFO ] 2020-08-28 17:10:15.045 [main]  - Activated Compute Engine
-[INFO ] 2020-08-28 17:10:15.498 [main]  - Pasted Number Of Instance: [4]
-[INFO ] 2020-08-28 17:10:16.015 [main]  - Pasted What Are These Instances For: []
-[INFO ] 2020-08-28 17:10:16.680 [main]  - Chose Operating System Software: [Free: Debian, CentOS, CoreOS, Ubuntu, or other User Provided OS]
-[INFO ] 2020-08-28 17:10:17.317 [main]  - Chose Machine Class: [Regular]
-[INFO ] 2020-08-28 17:10:18.015 [main]  - Chose Machine Type: [n1-standard-8 (vCPUs: 8, RAM: 30GB)]
-[INFO ] 2020-08-28 17:10:18.466 [main]  - Added GPUs
-[INFO ] 2020-08-28 17:10:19.139 [main]  - Chose Number Of GPUs: [1]
-[INFO ] 2020-08-28 17:10:19.813 [main]  - Chose GPU Type: [NVIDIA Tesla V100]
-[INFO ] 2020-08-28 17:10:20.568 [main]  - Chose Local SSD: [2x375 GB]
-[INFO ] 2020-08-28 17:10:21.217 [main]  - Chose Data Center Location: [Frankfurt (europe-west3)]
-[INFO ] 2020-08-28 17:10:21.901 [main]  - Chose Committed Usage: [1 Year]
-[INFO ] 2020-08-28 17:10:23.111 [main]  - Clicked Add To Estimate
-[INFO ] 2020-08-28 17:10:23.797 [main]  - Clicked Email Estimate
-[INFO ] 2020-08-28 17:10:29.007 [main]  - Opened Temp Email Page
-[INFO ] 2020-08-28 17:10:29.113 [main]  - Copied Temp Email Address: [rpoznkivb@emlhub.com]
-[INFO ] 2020-08-28 17:10:29.891 [main]  - Pasted Email Address: [rpoznkivb@emlhub.com]
-[INFO ] 2020-08-28 17:10:30.236 [main]  - Clicked Send Email
-[INFO ] 2020-08-28 17:10:32.012 [main]  - Get Message With Estimated Cost
-[INFO ] 2020-08-28 17:10:32.055 [main]  - Text From Message: [Estimated Monthly Cost: USD 1,082.77]
-[INFO ] 2020-08-28 17:10:32.055 [main]  - Resulting Value: [1,082.77]
+[INFO ] 2020-08-28 19:19:58.229 [main]  - Opened Google Cloud HomePage
+[INFO ] 2020-08-28 19:19:58.641 [main]  - Started to search: [Google Cloud Platform Pricing Calculator]
+[INFO ] 2020-08-28 19:20:05.887 [main]  - Clicked on the first term
+[INFO ] 2020-08-28 19:20:07.254 [main]  - Activated Compute Engine
+[INFO ] 2020-08-28 19:20:07.674 [main]  - Pasted Number Of Instance: [4]
+[INFO ] 2020-08-28 19:20:08.051 [main]  - Pasted What Are These Instances For: []
+[INFO ] 2020-08-28 19:20:08.743 [main]  - Chose Operating System Software: [Free: Debian, CentOS, CoreOS, Ubuntu, or other User Provided OS]
+[INFO ] 2020-08-28 19:20:09.370 [main]  - Chose Machine Class: [Regular]
+[INFO ] 2020-08-28 19:20:10.053 [main]  - Chose Machine Type: [n1-standard-8 (vCPUs: 8, RAM: 30GB)]
+[INFO ] 2020-08-28 19:20:10.456 [main]  - Added GPUs
+[INFO ] 2020-08-28 19:20:11.120 [main]  - Chose Number Of GPUs: [1]
+[INFO ] 2020-08-28 19:20:11.789 [main]  - Chose GPU Type: [NVIDIA Tesla V100]
+[INFO ] 2020-08-28 19:20:12.476 [main]  - Chose Local SSD: [2x375 GB]
+[INFO ] 2020-08-28 19:20:13.142 [main]  - Chose Data Center Location: [Frankfurt (europe-west3)]
+[INFO ] 2020-08-28 19:20:13.810 [main]  - Chose Committed Usage: [1 Year]
+[INFO ] 2020-08-28 19:20:14.389 [main]  - Clicked Add To Estimate
+[INFO ] 2020-08-28 19:20:14.931 [main]  - Clicked Email Estimate

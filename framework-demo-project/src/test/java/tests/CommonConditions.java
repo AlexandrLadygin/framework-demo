@@ -1,6 +1,7 @@
 package tests;
 
 import driver.DriverSingleton;
+import org.openqa.selenium.Dimension;
 import org.openqa.selenium.WebDriver;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
@@ -16,6 +17,7 @@ public abstract class CommonConditions {
     public void browserSetup() {
         driver = DriverSingleton.getDriver();
         driver.manage().window().maximize();
+        driver.manage().window().setSize(new Dimension(1680, 1050));
 
     }
 

@@ -18,7 +18,6 @@ public abstract class CommonConditions {
         driver = DriverSingleton.getDriver();
         driver.manage().window().maximize();
         driver.manage().window().setSize(new Dimension(1680, 1050));
-
     }
 
     @AfterMethod(alwaysRun = true)

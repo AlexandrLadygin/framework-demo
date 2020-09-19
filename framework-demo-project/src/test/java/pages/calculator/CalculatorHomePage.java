@@ -20,7 +20,8 @@ public class CalculatorHomePage extends AbstractPage {
     private final Logger logger = LogManager.getRootLogger();
     private WebDriverWait wait =  new WebDriverWait(driver, WAIT_TIMEOUT_SECONDS);
     private JavascriptExecutor executor = (JavascriptExecutor)driver;
-    private String universalTextForDropDownXpath = "//*[@class='md-select-menu-container md-active md-clickable']//*[contains(text(), '%s')]";
+    private String universalTextForDropDownXpath =
+            "//*[@class='md-select-menu-container md-active md-clickable']//*[contains(text(), '%s')]";
 
     @FindBy(xpath = "//div[@title='Compute Engine']")
     private WebElement xpathComputeEngine;
